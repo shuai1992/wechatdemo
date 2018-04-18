@@ -139,6 +139,8 @@ public class EaseCommonUtils {
 		ActivityManager manager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
 		List<RunningTaskInfo> runningTaskInfos = manager.getRunningTasks(1);
 
+
+
 		if (runningTaskInfos != null)
 			return runningTaskInfos.get(0).topActivity.getClassName();
 		else
